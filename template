@@ -1,0 +1,19 @@
+// Masukkan keyfame diatas ke dalam program tailwind dibawah ini
+
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+        colors: {},
+        keyframes: {
+            fadeIn: {
+                '0%, 50%, 100%': { opacity: 1 },
+                '25%, 75%': { opacity: 0 },
+            },
+        },
+        animation: {
+            fadeIn: "fadeIn 3s infinite",
+        },
+    },
+},
+};

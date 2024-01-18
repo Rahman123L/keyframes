@@ -80,7 +80,9 @@
                         opacity: 1,
                         transform: "translateX(-48px)",
                     },
-                    '24%': { opacity: 1 },
+                    '24%': { 
+                        opacity: 1 
+                    },
                     '40%': {
                         animationTimingFunction: "ease-in",
                         transform: "translateX(-26px)",
@@ -107,12 +109,447 @@
                         transform: "translateX(0px)",
                     },
                 },
+
+                // -----------------------------------------------------------------------------------------------------------
+                bounceRight: {
+                    '0%': {
+                        animationTimingFunction: 'ease-in',
+                        opacity: '1',
+                        transform: 'translateX(48px)',
+                    },
+                    '24%': {
+                        opacity: '1',
+                    },
+                    '40%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateX(26px)',
+                    },
+                    '65%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateX(13px)',
+                    },
+                    '82%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateX(6.5px)',
+                    },
+                    '93%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateX(4px)',
+                    },
+                    '25%, 55%, 75%, 87%, 98%': {
+                        animationTimingFunction: 'ease-out',
+                        transform: 'translateX(0px)',
+                    },
+                    '100%': {
+                        animationTimingFunction: 'ease-out',
+                        opacity: '1',
+                        transform: 'translateX(0px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                bounceTop: {
+                    '0%': {
+                        animationTimingFunction: 'ease-in',
+                        opacity: 1,
+                        transform: 'translateY(-45px)',
+                    },
+                    '24%': {
+                        opacity: 1,
+                    },
+                    '40%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateY(-24px)',
+                    },
+                    '65%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateY(-12px)',
+                    },
+                    '82%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateY(-6px)',
+                    },
+                    '93%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'translateY(-4px)',
+                    },
+                    '25%, 55%, 75%, 87%': {
+                        animationTimingFunction: 'ease-out',
+                        transform: 'translateY(0px)',
+                    },
+                    '100%': {
+                        animationTimingFunction: 'ease-out',
+                        opacity: 1,
+                        transform: 'translateY(0px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                jelloHorizontal: {
+                    '0%': { transform: 'scale3d(1, 1, 1)', },
+                    '30%': { transform: 'scale3d(1.25, 0.75, 1)', },
+                    '40%': { transform: 'scale3d(0.75, 1.25, 1)', },
+                    '50%': { transform: 'scale3d(1.15, 0.85, 1)', },
+                    '65%': { transform: 'scale3d(0.95, 1.05, 1)', },
+                    '75%': { transform: 'scale3d(1.05, 0.95, 1)', },
+                    '100%': { transform: 'scale3d(1, 1, 1)', },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                jelloVertical: {
+                    '0%': { transform: 'scale3d(1, 1, 1)' },
+                    '30%': { transform: 'scale3d(0.75, 1.25, 1)' },
+                    '40%': { transform: 'scale3d(1.25, 0.75, 1)' },
+                    '50%': { transform: 'scale3d(0.85, 1.15, 1)' },
+                    '65%': { transform: 'scale3d(1.05, 0.95, 1)' },
+                    '75%': { transform: 'scale3d(0.95, 1.05, 1)' },
+                    '100%': { transform: 'scale3d(1, 1, 1)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                pulseHeartBeat: {
+                    '0%': {
+                        animationTimingFunction: 'ease-out',
+                        transform: 'scale(1)',
+                        transformOrigin: 'center center',
+                    },
+                    '10%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'scale(0.91)',
+                    },
+                    '17%': {
+                        animationTimingFunction: 'ease-out',
+                        transform: 'scale(0.98)',
+                    },
+                    '33%': {
+                        animationTimingFunction: 'ease-in',
+                        transform: 'scale(0.87)',
+                    },
+                    '45%': {
+                        animationTimingFunction: 'ease-out',
+                        transform: 'scale(1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                pulseReguler: {
+                    '0%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.1)' },
+                    '100%': { transform: 'scale(1)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                pulsePing: {
+                    '0%': {
+                        opacity: 0.8,
+                        transform: 'scale(0.2)',
+                    },
+                    '80%': {
+                        opacity: 0,
+                        transform: 'scale(1.2)',
+                    },
+                    '100%': {
+                        opacity: 0,
+                        transform: 'scale(2.2)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeHorizontal: {
+                    '0%, 100%': {
+                        transform: 'translateX(0)',
+                    },
+                    '10%, 30%, 50%, 70%': {
+                        transform: 'translateX(-10px)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'translateX(10px)',
+                    },
+                    '80%': {
+                        transform: 'translateX(8px)',
+                    },
+                    '90%': {
+                        transform: 'translateX(-8px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeVertical: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '10%, 30%, 50%, 70%': { transform: 'translateY(-8px)' },
+                    '20%, 40%, 60%': { transform: 'translateY(8px)' },
+                    '80%': { transform: 'translateY(6.4px)' },
+                    '90%': { transform: 'translateY(-6.4px)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeRotate: {
+                    '0%, 100%': {
+                        transform: 'rotate(0deg)',
+                        'transform-origin': '50% 50%',
+                    },
+                    '10%': {
+                        transform: 'rotate(8deg)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'rotate(-10deg)',
+                    },
+                    '30%, 50%, 70%': {
+                        transform: 'rotate(10deg)',
+                    },
+                    '80%': {
+                        transform: 'rotate(-8deg)',
+                    },
+                    '90%': {
+                        transform: 'rotate(8deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeBottom: {
+                    '0%, 100%': {
+                        transform: 'rotate(0deg)',
+                        'transform-origin': '50% 100%',
+                    },
+                    '10%': {
+                        transform: 'rotate(2deg)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'rotate(-4deg)',
+                    },
+                    '30%, 50%, 70%': {
+                        transform: 'rotate(4deg)',
+                    },
+                    '80%': {
+                        transform: 'rotate(-2deg)',
+                    },
+                    '90%': {
+                        transform: 'rotate(2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeLeft: {
+                    '0%, 100%': {
+                        transform: 'rotate(0deg)',
+                        'transform-origin': '0 50%',
+                    },
+                    '10%': {
+                        transform: 'rotate(2deg)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'rotate(-4deg)',
+                    },
+                    '30%, 50%, 70%': {
+                        transform: 'rotate(4deg)',
+                    },
+                    '80%': {
+                        transform: 'rotate(-2deg)',
+                    },
+                    '90%': {
+                        transform: 'rotate(2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeRight: {
+                    '0%, 100%': {
+                        transform: 'rotate(0deg)',
+                        'transform-origin': '100% 50%',
+                    },
+                    '10%': {
+                        transform: 'rotate(2deg)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'rotate(-4deg)',
+                    },
+                    '30%, 50%, 70%': {
+                        transform: 'rotate(4deg)',
+                    },
+                    '80%': {
+                        transform: 'rotate(-2deg)',
+                    },
+                    '90%': {
+                        transform: 'rotate(2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                shakeTop: {
+                    '0%, 100%': {
+                        transform: 'rotate(0deg)',
+                        'transform-origin': '50% 0',
+                    },
+                    '10%': {
+                        transform: 'rotate(2deg)',
+                    },
+                    '20%, 40%, 60%': {
+                        transform: 'rotate(-4deg)',
+                    },
+                    '30%, 50%, 70%': {
+                        transform: 'rotate(4deg)',
+                    },
+                    '80%': {
+                        transform: 'rotate(-2deg)',
+                    },
+                    '90%': {
+                        transform: 'rotate(2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                vibrate: {
+                    '0%': { transform: 'translate(0)' },
+                    '20%': { transform: 'translate(-2px, 2px)' },
+                    '40%': { transform: 'translate(-2px, -2px)' },
+                    '60%': { transform: 'translate(2px, 2px)' },
+                    '80%': { transform: 'translate(2px, -2px)' },
+                    '100%': { transform: 'translate(0)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                vibratee: {
+                    '0%': { transform: 'translate(0)' },
+                    '20%': { transform: 'translate(2px, -2px)' },
+                    '40%': { transform: 'translate(2px, 2px)' },
+                    '60%': { transform: 'translate(-2px, 2px)' },
+                    '80%': { transform: 'translate(-2px, -2px)' },
+                    '100%': { transform: 'translate(0)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                vibrateee: {
+                    '0%': { transform: 'translate(0)' },
+                    '10%': { transform: 'translate(-2px, -2px)' },
+                    '20%': { transform: 'translate(2px, -2px)' },
+                    '30%': { transform: 'translate(-2px, 2px)' },
+                    '40%': { transform: 'translate(2px, 2px)' },
+                    '50%': { transform: 'translate(-2px, -2px)' },
+                    '60%': { transform: 'translate(2px, -2px)' },
+                    '70%': { transform: 'translate(-2px, 2px)' },
+                    '80%': { transform: 'translate(-2px, -2px)' },
+                    '90%': { transform: 'translate(2px, -2px)' },
+                    '100%': { transform: 'translate(0)' },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                wobbleBottom: {
+                    '0%, 100%': {
+                        transform: 'translateX(0%)',
+                        'transform-origin': '50% 50%',
+                    },
+                    '15%': {
+                        transform: 'translateX(-30px) rotate(-6deg)',
+                    },
+                    '30%': {
+                        transform: 'translateX(15px) rotate(6deg)',
+                    },
+                    '45%': {
+                        transform: 'translateX(-15px) rotate(-3.6deg)',
+                    },
+                    '60%': {
+                        transform: 'translateX(9px) rotate(2.4deg)',
+                    },
+                    '75%': {
+                        transform: 'translateX(-6px) rotate(-1.2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                wobbleLeft: {
+                    '0%, 100%': {
+                        transform: 'translateY(0%)',
+                        'transform-origin': '50% 50%',
+                    },
+                    '15%': {
+                        transform: 'translateY(-30px) rotate(-6deg)',
+                    },
+                    '30%': {
+                        transform: 'translateY(15px) rotate(6deg)',
+                    },
+                    '45%': {
+                        transform: 'translateY(-15px) rotate(-3.6deg)',
+                    },
+                    '60%': {
+                        transform: 'translateY(9px) rotate(2.4deg)',
+                    },
+                    '75%': {
+                        transform: 'translateY(-6px) rotate(-1.2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                wobbleRight: {
+                    '0%, 100%': {
+                        transform: 'translateY(0%)',
+                        'transform-origin': '50% 50%',
+                    },
+                    '15%': {
+                        transform: 'translateY(-30px) rotate(6deg)',
+                    },
+                    '30%': {
+                        transform: 'translateY(15px) rotate(-6deg)',
+                    },
+                    '45%': {
+                        transform: 'translateY(-15px) rotate(3.6deg)',
+                    },
+                    '60%': {
+                        transform: 'translateY(9px) rotate(-2.4deg)',
+                    },
+                    '75%': {
+                        transform: 'translateY(-6px) rotate(1.2deg)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                wobbleTop: {
+                    '0%, 100%': {
+                        transform: 'translateX(0%)',
+                        'transform-origin': '50% 50%',
+                    },
+                    '15%': {
+                        transform: 'translateX(-30px) rotate(6deg)',
+                    },
+                    '30%': {
+                        transform: 'translateX(15px) rotate(-6deg)',
+                    },
+                    '45%': {
+                        transform: 'translateX(-15px) rotate(3.6deg)',
+                    },
+                    '60%': {
+                        transform: 'translateX(9px) rotate(-2.4deg)',
+                    },
+                    '75%': {
+                        transform: 'translateX(-6px) rotate(1.2deg)',
+                    },
+                },
             },
             animation: {
                 fadeIn: "fadeIn 3s infinite",
                 fadeInn: "fadeInn 3s cubic-bezier(0, 0, 0, 0) infinite",
                 bounceBottom: "bounceBottom 3s linear infinite",
                 bounceLeft: "bounceLeft 3s infinite",
+                bounceRight: "bounceRight 3s infinite",
+                bounceTop: "bounceTop 3s infinite",
+                jelloHorizontal: "jelloHorizontal 3s infinite",
+                jelloVertical: "jelloVertical 3s infinite",
+                pulseHeartBeat: "pulseHeartBeat 3s infinite",
+                pulseReguler: "pulseReguler 3s infinite",
+                pulsePing: "pulsePing 3s infinite",
+                shakeHorizontal: "shakeHorizontal 3s infinite",
+                shakeVertical: "shakeVertical 3s infinite",
+                shakeRotate: "shakeRotate 3s infinite",
+                shakeBottom: "shakeBottom 3s infinite",
+                shakeLeft: "shakeLeft 3s infinite",
+                shakeRight: "shakeRight 3s infinite",
+                shakeTop: "shakeTop 3s infinite",
+                vibrate: "vibrate 3s infinite",
+                vibratee: "vibratee 3s infinite",
+                vibrateee: "vibrateee 3s infinite",
+                wobbleBottom: "wobbleBottom 3s infinite",
+                wobbleLeft: "wobbleLeft 3s infinite",
+                wobbleRight: "wobbleRight 3s infinite",
+                wobbleTop: "wobbleTop 3s infinite",
             },
         },
     },
@@ -128,13 +565,48 @@
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-fadeIn">
                 <div class="text-4xl flex justify-center text-white">
                     <i class="fa-solid fa-code"></i>
-                </div>                 
+                </div>
             </div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-fadeInn"></div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-bounceBottom"></div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-bounceLeft"></div>
-            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-"></div>
-            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-bounceRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-bounceTop">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-jelloHorizontal"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-jelloVertical"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-pulseHeartBeat"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-pulseReguler"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-pulsePing">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeHorizontal"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeVertical"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeRotate"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeBottom"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeLeft">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-shakeTop"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-vibrate"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-vibratee"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-vibrateee">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-wobbleBottom"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-wobbleLeft"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-wobbleRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-wobbleTop"></div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-"></div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-"></div>
             <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-"></div>
