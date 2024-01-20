@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYFRAMES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+            colors: {},
+            keyframes: {
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowBottom: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowBottomLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowBottomRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '12px 12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowCenter: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 0 20px 0px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 0 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowLeftRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1), 0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 0 20px -12px rgba(64, 64, 64, 1), 12px 0 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '12px 0 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowTop: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 -12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowTopBottom: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1), 0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 -12px 20px -12px rgba(64, 64, 64, 1), 0 12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowTopLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px -12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowTopRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                    },
+                    '100%': {
+                        boxShadow: '12px -12px 20px -12px rgba(64, 64, 64, 1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleBottom: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateY(0)',
+                    },
+                    '100%': {
+                        boxShadow: '0 12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateY(-12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleBottomLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0) translateY(0)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(12px) translateY(-12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleBottomRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0) translateY(0)',
+                    },
+                    '100%': {
+                        boxShadow: '12px 12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(-12px) translateY(-12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleCenter: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 0 20px 0px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 0 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleLeftRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1), 0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px 0 20px -12px rgba(64, 64, 64, 1), 12px 0 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0)',
+                    },
+                    '100%': {
+                        boxShadow: '12px 0 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(-12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleTop: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateY(0)',
+                    },
+                    '100%': {
+                        boxShadow: '0 -12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateY(12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleTopBottom: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1), 0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1)',
+                    },
+                    '100%': {
+                        boxShadow: '0 -12px 20px -12px rgba(64, 64, 64, 1), 0 12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleTopLeft: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0px) translateY(0px)',
+                    },
+                    '100%': {
+                        boxShadow: '-12px -12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(12px) translateY(12px)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                boxShadowScaleTopRight: {
+                    '0%': {
+                        boxShadow: '0 0 0 0 rgba(64, 64, 64, 1)',
+                        transform: 'scale(1) translateX(0px) translateY(0px)',
+                    },
+                    '100%': {
+                        boxShadow: '12px -12px 20px -12px rgba(64, 64, 64, 1)',
+                        transform: 'scale(1.1) translateX(-12px) translateY(-12px)',
+                    },
+                },
+            },
+            animation: {
+                boxShadowBottom: "boxShadowBottom 3s infinite",
+                boxShadowBottomLeft: "boxShadowBottomLeft 3s infinite",
+                boxShadowBottomRight: "boxShadowBottomRight 3s infinite",
+                boxShadowCenter: "boxShadowCenter 3s infinite",
+                boxShadowLeft: "boxShadowLeft 3s infinite",
+                boxShadowLeftRight: "boxShadowLeftRight 3s infinite",
+                boxShadowRight: "boxShadowRight 3s infinite",
+                boxShadowTop: "boxShadowTop 3s infinite",
+                boxShadowTopBottom: "boxShadowTopBottom 3s infinite",
+                boxShadowTopLeft: "boxShadowTopLeft 3s infinite",
+                boxShadowTopRight: "boxShadowTopRight 3s infinite",
+                boxShadowScaleBottom: "boxShadowScaleBottom 3s infinite",
+                boxShadowScaleBottomLeft: "boxShadowScaleBottomLeft 3s infinite",
+                boxShadowScaleBottomRight: "boxShadowScaleBottomRight 3s infinite",
+                boxShadowScaleCenter: "boxShadowScaleCenter 3s infinite",
+                boxShadowScaleLeft: "boxShadowScaleLeft 3s infinite",
+                boxShadowScaleLeftRight: "boxShadowScaleLeftRight 3s infinite",
+                boxShadowScaleRight: "boxShadowScaleRight 3s infinite",
+                boxShadowScaleTop: "boxShadowScaleTop 3s infinite",
+                boxShadowScaleTopBottom: "boxShadowScaleTopBottom 3s infinite",
+            },
+        },
+    },
+    };
+    </script>
+    <!-- Tailwind End forwards -->
+
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="container img max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[5rem] m-[3rem]">
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowBottom">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowBottomLeft"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowBottomRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowCenter"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowLeft"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowLeftRight">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowTop"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowTopBottom"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowTopLeft"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowTopRight">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleBottom"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleBottomLeft"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleBottomRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleCenter"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleLeft">
+                <div class="text-4xl flex justify-center text-white">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleLeftRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleRight"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleTop"></div>
+            <div class="bg-blue-600 p-[5rem] transition transform duration-300 animate-boxShadowScaleTopBottom"></div>
+        </div>
+    </header>
+</body>
+</html>
